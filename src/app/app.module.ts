@@ -8,6 +8,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { BlogsService } from './services/blogs.service';
+import { BlogsComponent } from './components/blogs/blogs.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +20,18 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
     NavbarComponent,
     FooterComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    BlogsComponent,
+    BlogComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    BlogsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
