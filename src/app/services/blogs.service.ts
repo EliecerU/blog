@@ -14,7 +14,7 @@ export class BlogsService {
       "standard dummy text ever since the 1500s, when an unknown "+
       "printer took a galley of type and scrambled it to make a type "+
       "specimen book. ",
-      img: "https://steamuserimages-a.akamaihd.net/ugc/1858304668125263960/ADBE89E89C151A6078BB357099E56519537FD712/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+      img: "http://c.files.bbci.co.uk/650C/production/_105486852_vialactea3.jpg"
     },
     {
       autor: "Eliecer Ureche",
@@ -24,7 +24,7 @@ export class BlogsService {
       "standard dummy text ever since the 1500s, when an unknown "+
       "printer took a galley of type and scrambled it to make a type "+
       "specimen book. ",
-      img: "https://steamuserimages-a.akamaihd.net/ugc/1858304668125263960/ADBE89E89C151A6078BB357099E56519537FD712/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+      img: "http://c.files.bbci.co.uk/650C/production/_105486852_vialactea3.jpg"
     
     },
     {
@@ -35,8 +35,7 @@ export class BlogsService {
       "standard dummy text ever since the 1500s, when an unknown "+
       "printer took a galley of type and scrambled it to make a type "+
       "specimen book. ",
-      img: "https://steamuserimages-a.akamaihd.net/ugc/1858304668125263960/ADBE89E89C151A6078BB357099E56519537FD712/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
-    
+      img: "http://c.files.bbci.co.uk/650C/production/_105486852_vialactea3.jpg"    
     },
     {
       autor: "Eliecer Ureche",
@@ -46,8 +45,7 @@ export class BlogsService {
       "standard dummy text ever since the 1500s, when an unknown "+
       "printer took a galley of type and scrambled it to make a type "+
       "specimen book. ",
-      img: "https://steamuserimages-a.akamaihd.net/ugc/1858304668125263960/ADBE89E89C151A6078BB357099E56519537FD712/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
-    
+      img: "http://c.files.bbci.co.uk/650C/production/_105486852_vialactea3.jpg"    
     },
     {
       autor: "Eliecer Ureche",
@@ -57,8 +55,7 @@ export class BlogsService {
       "standard dummy text ever since the 1500s, when an unknown "+
       "printer took a galley of type and scrambled it to make a type "+
       "specimen book. ",
-      img: "https://steamuserimages-a.akamaihd.net/ugc/1858304668125263960/ADBE89E89C151A6078BB357099E56519537FD712/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
-    
+      img: "http://c.files.bbci.co.uk/650C/production/_105486852_vialactea3.jpg"    
     }
   ];
 
@@ -68,6 +65,10 @@ export class BlogsService {
 
   getBlogs(){
     return this.blogs;
+  }
+
+  getBlog( idx:number ){
+    return this.blogs[idx];
   }
 }
 

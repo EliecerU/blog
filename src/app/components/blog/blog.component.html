@@ -1,1 +1,21 @@
-<p>blog works!</p>
+
+<div class="container-fluid">
+    <div class="row mt-3 mb-2">
+        <div class="col col-sm col-xs col-md col-lg p-4">
+            <section>
+                <h1>{{ blog.titulo }}</h1>
+                <sup >{{ blog.autor }}</sup>
+                <img [src]='blog.img' class="rounded-2 img-fluid w-100" alt="">
+                <p class="mt-4">
+                    {{ blog.info }}
+                </p>
+            </section>
+        </div>
+        <div class="col-12 col-sm col-xs col-md col-xl-4">
+            <aside>
+                <h1>Aside</h1>
+            </aside>
+        </div>
+
+    </div>
+</div>
