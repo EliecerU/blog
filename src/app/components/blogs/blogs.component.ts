@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Blog, BlogsService } from 'src/app/services/blogs.service';
+
 
 @Component({
   selector: 'app-blogs',
@@ -10,12 +12,16 @@ export class BlogsComponent {
 
   blogs:Blog[]=[];
 
-  constructor( private _blogService: BlogsService ){
+  constructor( private _blogService: BlogsService, private router:Router ){
 
   }
 
   ngOnInit(): void {
     this.blogs = this._blogService.getBlogs();
-    console.log(this.blogs);
+    // console.log(this.blogs);
+  }
+
+  buscarBlog( termino:string ){
+    this.router.navigate(['/buscar', termino]);
   }
 }

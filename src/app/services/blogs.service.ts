@@ -8,7 +8,7 @@ export class BlogsService {
   private blogs:Blog[]=[
     {
       autor: "Eliecer Ureche",
-      titulo: "No seas carenalga",
+      titulo: " seas carenalga",
       info: "Lorem Ipsum is simply dummy text of the printing " +
       "and typesetting industry. Lorem Ipsum has been the industry's" +
       "standard dummy text ever since the 1500s, when an unknown "+
@@ -29,7 +29,7 @@ export class BlogsService {
     },
     {
       autor: "Eliecer Ureche",
-      titulo: "No seas carenalga",
+      titulo: " seas carenalga",
       info: "Lorem Ipsum is simply dummy text of the printing " +
       "and typesetting industry. Lorem Ipsum has been the industry's" +
       "standard dummy text ever since the 1500s, when an unknown "+
@@ -39,7 +39,7 @@ export class BlogsService {
     },
     {
       autor: "Eliecer Ureche",
-      titulo: "No seas carenalga",
+      titulo: " seas carenalga",
       info: "Lorem Ipsum is simply dummy text of the printing " +
       "and typesetting industry. Lorem Ipsum has been the industry's" +
       "standard dummy text ever since the 1500s, when an unknown "+
@@ -49,7 +49,7 @@ export class BlogsService {
     },
     {
       autor: "Eliecer Ureche",
-      titulo: "No seas carenalga",
+      titulo: " seas carenalga",
       info: "Lorem Ipsum is simply dummy text of the printing " +
       "and typesetting industry. Lorem Ipsum has been the industry's" +
       "standard dummy text ever since the 1500s, when an unknown "+
@@ -69,6 +69,19 @@ export class BlogsService {
 
   getBlog( idx:number ){
     return this.blogs[idx];
+  }
+
+  buscarBlogs( termino:string ):Blog[]{
+    let blogsArr:Blog[]=[];
+    termino = termino.toLowerCase();
+    for (const blog of this.blogs) {
+      let titulo = blog.titulo.toLowerCase();
+      if (titulo.indexOf( termino ) >= 0) {
+        blogsArr.push( blog )
+      }
+    }
+
+    return blogsArr;
   }
 }
 

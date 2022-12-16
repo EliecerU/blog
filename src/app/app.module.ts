@@ -12,6 +12,8 @@ import { BlogsService } from './services/blogs.service';
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
+import { BlogTarjetaComponent } from './components/blog-tarjeta/blog-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { HeaderComponent } from './shared/header/header.component';
     SignUpComponent,
     BlogsComponent,
     BlogComponent,
-    HeaderComponent
+    HeaderComponent,
+    BuscadorComponent,
+    BlogTarjetaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+
+<h1 class="mt-3">Buscador: <small>{{ termino }}</small></h1>
+<hr>
+
+<div class="row" *ngIf="blogs.length ==  0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existen resultados con el término: {{ termino }}
+        </div>
+    </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+  <app-blog-tarjeta [blog]="blog" [index]="i" *ngFor="let blog of blogs; let i = index;"></app-blog-tarjeta>
+</div> 
+    
