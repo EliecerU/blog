@@ -24,4 +24,8 @@ export class BlogsComponent {
   buscarBlog( termino:string ){
     this.router.navigate(['/buscar', termino]);
   }
+
+  verBlog( index:number ){
+    this.router.navigate( ['blogs/blog', index] );
+  }
 }
